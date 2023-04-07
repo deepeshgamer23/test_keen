@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+
+
+    <!--Bootstap css cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Bootstap css cdn-->
+
+
+    <!--Boxicons Cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--Boxicons Cdn-->
+
+
+
+    <!--Google Fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!--Google Fonts links-->
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .opt2 li {
+            list-style: none;
+        }
+
+        .navbar1 {
+            background-color: #090B52;
+        }
+
+        .search input {
+            padding: 3px 70px;
+            border-radius: 2px;
+        }
+
+        .search i {
+            position: relative;
+            top: 10px;
+            right: 35px;
+            color: grey;
+        }
+
+        body {
+            background-image: url(/Cute-Ipad-Backgrounds-Cartoon-Network.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar1 d-grid justify-content-center">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><img src="/179083357bizbook-white.png" alt="Bootstrap" width="270px"
+                    height="30px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            | Explore
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web development</a></li>
+                            <li><a class="dropdown-item" href="#">App development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ios info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex search" role="search">
+                    <input class="form-control me-2" type="search" placeholder="What you are looking for ?"
+                        aria-label="Search">
+                    <i class='bx bx-search'></i>
+                </form>
+                <ul class="opt2 nav ">
+                    <li>
+                        <a href="#" class="nav-link text-white">Add business</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">Sign in</a>
+                    </li>
+                    <button class="btn btn-primary">Create an account</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="pt-5 text-black h1 text-center fw-bolder">
+            Find your <span class="text-primary"> Local needs </span>
+            <p class="h6">Restaurants, cafe's, and bars in New york</p>
+        </div>
+        <!-- <img src="/curve2.png" alt="img" class="ps-5"> -->
+
+        <br><br>
+
+        <form class="d-flex container-fluid col-7" role="search">
+            <input class="form-control pt-3 pb-3" type="search" placeholder="All Services            Select city               What you are looking for?    " aria-label="Search">
+            <button class="btn btn-primary pe-3 ps-3" type="submit">Search</button>
+        </form>
+        <br><br>
+
+        <!-- <div class="box col-1 text-white mr-2 mb-2 ms-2 me-2  bg-info">
+            <img src="/shop.png" alt="" >
+            <h6>All Services</h6>
+        </div> -->
+    </main>
+
+    <!--Boostrap js cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!--Boostrap js cdn-->
+</body>
+
+</html>
