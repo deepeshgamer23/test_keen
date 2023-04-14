@@ -30,12 +30,18 @@
     <!--Google Fonts links-->
 
 
+    <!--Bootstap icons link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--Bootstap icons link-->
+
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
+            text-decoration: none;
         }
 
         .opt2 li {
@@ -59,18 +65,82 @@
         }
 
         body {
-            background-image: url(/Cute-Ipad-Backgrounds-Cartoon-Network.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-image: url(/images.jpg);
+
+
         }
 
-    
+        .nav-list li {
+            background: #181818c7;
+            border: 1px solid #626262;
+            border-radius: 10px;
+        }
+
+        .opts li {
+            width: 100%;
+            height: 120px;
+        }
+
+        .opts li:hover {
+            cursor: pointer;
+            transition: all .40s ease;
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        .card-hovers div:hover {
+            cursor: pointer;
+            background: #fff;
+            transform: translateY(-8px);
+            transition: all 0.5s ease;
+            box-shadow: 0 19px 46px -39px rgb(7, 103, 247);
+        }
+
+
+        .upercard div:hover {
+            cursor: pointer;
+            transition: all .2s ease;
+            transform: translateY(-5px);
+            box-shadow: 0 11px 45px -13px rgba(37, 39, 42, 0.67);
+            z-index: 9;
+        }
+
+        .footer-opt li{
+            list-style: none;
+            width: 50%;
+            float: left;
+            padding: 0 5px 12px 0px;
+            font-size: 12px;
+        }
+
+        .footer-opt2 li{
+           float: left;
+           width: 16%;
+           list-style: none;
+           padding: 0 5px 12px 0px;
+           font-size: 12px;
+        }
+
+        .footer-opt3 div{
+          padding-top: 20px;  
+          padding-left: 35px;
+          font-size: 12px;
+        }
+
+        .footer-opt4 div ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+       
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar1 d-grid justify-content-center">
-        <div class="container-fluid ">
+        <div class="container-fluid col-12 col-sm-12 col-md-12">
             <a class="navbar-brand" href="#"><img src="/179083357bizbook-white.png" alt="Bootstrap" width="270px"
                     height="30px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -96,8 +166,7 @@
                     </li>
                 </ul>
                 <form class="d-flex search" role="search">
-                    <input class="form-control me-2" type="search" placeholder="What you are looking for ?"
-                        aria-label="Search">
+                    <input class="form-control " type="search" placeholder="What you are looking ?" aria-label="Search">
                     <i class='bx bx-search'></i>
                 </form>
                 <ul class="opt2 nav ">
@@ -119,21 +188,609 @@
             Find your <span class="text-primary"> Local needs </span>
             <p class="h6">Restaurants, cafe's, and bars in New york</p>
         </div>
-        <!-- <img src="/curve2.png" alt="img" class="ps-5"> -->
+
 
         <br><br>
 
-        <form class="d-flex container-fluid col-7" role="search">
-            <input class="form-control pt-3 pb-3" type="search" placeholder="All Services            Select city               What you are looking for?    " aria-label="Search">
+        <form class="d-flex container-fluid col-7 " role="search">
+            <input class="form-control pt-3 pb-3 text-center" type="search" placeholder="What you are looking for?    "
+                aria-label="Search">
             <button class="btn btn-primary pe-3 ps-3" type="submit">Search</button>
         </form>
         <br><br>
 
-        <!-- <div class="box col-1 text-white mr-2 mb-2 ms-2 me-2  bg-info">
-            <img src="/shop.png" alt="" >
-            <h6>All Services</h6>
-        </div> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 opts">
+                    <ul class="list-unstyled d-flex justify-content-center nav-list">
+                        <li class="me-2">
+                            <div class="text-white text-center pt-4">
+                                <img src="/icons/shop.png" alt="shop" class="pb-2">
+                                <h6>All Services</h6>
+                            </div>
+                        </li>
+
+
+                        <li class="me-2">
+                            <div class="text-white text-center  pt-4">
+                                <img src="/Icons/expert (1).png" alt="shop" class="pb-2">
+                                <h6>Experts</h6>
+                            </div>
+                        </li>
+
+
+                        <li class="me-2">
+                            <div class="text-white text-center  pt-3">
+                                <img src="/Icons/star.png" alt="shop" class="col-4 mb-1">
+                                <h6>Jobs</h6>
+                            </div>
+                        </li>
+
+
+                        <li class="me-2">
+                            <div class="text-white text-center  pt-3">
+                                <img src="/Icons/hot-air-balloon.png" alt="shop" class="col-4 pb-2">
+                                <h6>Travel</h6>
+                            </div>
+                        </li>
+
+                        <li class="me-2">
+                            <div class="text-white text-center pt-4">
+                                <img src="/Icons/news.png" alt="shop" class="mb-2">
+                                <h6>News</h6>
+                            </div>
+                        </li>
+
+
+                        <li class="me-2">
+                            <div class="text-white text-center  pt-4">
+                                <img src="/Icons/calendar.png" alt="shop" class="mb-2">
+                                <h6>Events</h6>
+                            </div>
+                        </li>
+
+
+                        <li class="me-2">
+                            <div class="text-white text-center   pt-4">
+                                <img src="/Icons/cart.png" alt="shop" class="mb-2">
+                                <h6>Product</h6>
+                            </div>
+                        </li>
+
+
+                        <li class="me-2">
+                            <div class="text-white text-center  pt-4 ">
+                                <img src="/Icons/coupons.png" alt="shop" class="col-3 mb-1">
+                                <h6>Coupons</h6>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="text-white text-center   pt-4">
+                                <img src="/Icons/blog1.png" alt="shop" class="col-3">
+                                <h6>Blogs</h6>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Card items start-->
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 col-md-3 upercard">
+                    <div class="mt-4 mb-4 ms-4 me-4 bg-white text-center rounded ">
+                        <img src="/icons2/1.png" alt="" class="mb-3 mt-3">
+                        <h6 class="mb-3">24 Million Business</h6>
+                        <p class="h6 mb-4 text-secondary">Choose from a collection of handpicked luxury villas &
+                            apartments</p>
+                        <button class="btn btn-primary mb-3">Explore now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-3 upercard">
+                    <div class="mt-4 mb-4 ms-4 me-4 bg-white text-center rounded">
+                        <img src="/icons2/2.png" alt="" class="mb-3 mt-3">
+                        <h6 class="mb-3">500+ Service Experts</h6>
+                        <p class="h6 mb-4 text-secondary">Are you looking for the best Service Expert? We make it easy
+                            to hire the right professional</p>
+                        <button class="btn btn-primary mb-3">Book expert now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-3 upercard">
+                    <div class="mt-4 mb-4 ms-4 me-4 bg-white text-center rounded">
+                        <img src="/icons2/3.png" alt="" class="mb-3 mt-3">
+                        <h6 class="mb-3">Find Your Next Job Now</h6>
+                        <p class="h6 mb-2 text-secondary">Search latest job openings online including IT, Sales,
+                            Banking, Fresher, Walk-ins, Part-time & more</p>
+                        <button class="btn btn-primary mb-3">Find your job</button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-3 upercard">
+                    <div class="mt-4 mb-4 ms-4 me-4 bg-white text-center rounded" style="height: 34vh;">
+                        <img src="/icons2/4.png" alt="" class="mb-3 mt-3">
+                        <h6 class="mb-4">Sell & Buy Product Online</h6>
+                        <p class="h6 mb-4 text-secondary">Bizbook Online store. Everything you need to sell & buy
+                            online.</p>
+                        <button class="btn btn-primary mb-3">Start Selling online</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Card items end-->
+
+
+
+        <!--Popular Services near you start-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-white">Popular Services <span class="text-primary"> near you </span> </h2>
+                    <p class="text-white">lacinia viverra lectus. Fusce imperdiet ullamcorper metus eu fringilla.</p>
+                </div>
+            </div>
+        </div>
+        <!--Popular Services near you end-->
+
+
+        <!--Cart start-->
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-md-9 col-lg-3 card-hovers">
+                    <div class="card " style="width: 18rem;">
+                        <img src="/Card img/60622ser6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Spa and Facial</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-9 col-lg-3 card-hovers">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Card img/Hospital.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Hospital</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-9 col-lg-3 card-hovers">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Card img//Transport.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Transpotation</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-9 col-lg-3 card-hovers">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Card img/bike.jpg" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Automobiles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-9 col-lg-3 mt-5 card-hovers">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Card img/electricals.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Electricals</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-9 col-lg-3  mt-5 card-hovers">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Card img/education.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Education</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-9 col-lg-3  mt-5 card-hovers">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Card img/sports.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Sports</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-9 col-lg-3  mt-5 card-hovers">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Card img/real estate.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Real Estate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12  mt-3 text-center ">
+                        <button class="btn btn-primary">View All Services</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <button  class="col-12  mt-5 text-center">View All Services</button> -->
+
+        </div>
+        <!--Cart end-->
+
+
+
+        <!--Carosal start-->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner container mt-5 mb-5">
+                <div class="carousel-item active ">
+                    <img src="/Car-img/90890557952.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Car-img/27459517111.jpg" class="d-block w-100 rounded" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Carosal end-->
+
+        <!--EXPLORE OUR MORE SERVICES start-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-3 text-center">
+                    <p class="text-white h1">CHOOSE <span class="text-white"> YOUR PLAN </span> </p>
+                </div>
+            </div>
+        </div>
+        <!--EXPLORE OUR MORE SERVICES end-->
+
+        <!--Card start-->
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <dov class="col-12 col-md-6 col-lg-3 text-center">
+                    <div class="card">
+                        <h5 class="text-center mt-3">FreePLAN</h5>
+                        <p class="card-header bg-white">For getting started</p>
+                        <div class="card-body">
+                            <h1 style="font-size: 65px;" class="card-title ">FREE</h1>
+                            <p class="card-text">Single user</p>
+                            <a href="#" class="btn btn-primary">GET START</a><br>
+                            <a href="#">Know More</a>
+                        </div>
+                    </div>
+                </dov>
+
+
+                <dov class="col-12 col-md-6 col-lg-3 text-center">
+                    <div class="card">
+                        <h5 class="text-center mt-3">StandardPLAN</h5>
+                        <p class="card-header bg-white">Perfect for small teams</p>
+                        <div class="card-body">
+                            <h1 style="font-size: 65px;" class="card-title ">$9</h1>
+                            <p class="card-text">Startup business</p>
+                            <a href="#" class="btn btn-primary">GET START</a><br>
+                            <a href="#">Know More</a>
+                        </div>
+                    </div>
+                </dov>
+
+
+                <dov class="col-12 col-md-6 col-lg-3 text-center">
+                    <div class="card">
+                        <h5 class="text-center mt-3">PremiumPLAN</h5>
+                        <p class="card-header bg-white">Best value for large teams</p>
+                        <div class="card-body">
+                            <h1 style="font-size: 65px;" class="card-title ">$19</h1>
+                            <p class="card-text">Medium business</p>
+                            <a href="#" class="btn btn-primary">GET START</a><br>
+                            <a href="#">Know More</a>
+                        </div>
+                    </div>
+                </dov>
+
+
+                <dov class="col-12 col-md-6 col-lg-3 text-center">
+                    <div class="card bg-danger">
+                        <h5 class="text-center mt-3 ">Premium PlusPLAN</h5>
+                        <p class="card-header">Made for enterprises</p>
+                        <div class="card-body bg-white">
+                            <h1 style="font-size: 65px;" class="card-title ">$20</h1>
+                            <p class="card-text">Made for enterprises</p>
+                            <a href="#" class="btn btn-primary">GET START</a><br>
+                            <a href="#">Know More</a>
+                        </div>
+                    </div>
+                </dov>
+            </div>
+        </div>
+        <!--Card end-->
+
+
+
+        <!--How it works start-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <h2 class="text-white">How It Works</h2>
+                    <p class="text-white">Explore some of the best tips from around the world from our <br> partners and
+                        friends.lacinia viverra lectus.</p>
+                </div>
+            </div>
+        </div>
+        <!--How it works end-->
+
+
+        <!--How it works carts start-->
+        <div class="container">
+            <div class="row mt-5 mb-5 card-hovers">
+                <div class="col-3 bg-white text-center rounded me-5" style="width: 18rem;">
+                    <img src="/icons3/how1.png" alt="" class="mt-2 mb-3">
+                    <h6 class="h6">Create an account</h6>
+                    <p class="text-secondary">Fusce imperdiet ullamcorper metus eu fringilla. from around the world from
+                        our partners and friends.</p>
+                </div>
+
+
+                <div class="col-3 bg-white text-center rounded me-5" style="width: 18rem;">
+                    <img src="/icons3/how2.png" alt="" class="mt-2 mb-3">
+                    <h6 class="h6">Add your business</h6>
+                    <p class="text-secondary">Fusce imperdiet ullamcorper metus eu fringilla. from around the world from
+                        our partners and friends.</p>
+                </div>
+
+
+                <div class="col-3 bg-white text-center rounded me-5" style="width: 18rem;">
+                    <img src="/icons3/how3.png" alt="" class="mt-2 mb-3">
+                    <h6 class="h6">Get more leads</h6>
+                    <p class="text-secondary">Fusce imperdiet ullamcorper metus eu fringilla. from around the world from
+                        our partners and friends..</p>
+                </div>
+
+
+                <div class="col-3 bg-white text-center rounded" style="width: 18rem;">
+                    <img src="/icons3/how4.png" alt="" class="mt-2 mb-3">
+                    <h6 class="h6">Archive goles</h6>
+                    <p class="text-secondary">Fusce imperdiet ullamcorper metus eu fringilla. from around the world from
+                        our partners and friends.</p>
+                </div>
+            </div>
+        </div>
+        <!--How it works carts end-->
+
+
+        <!--Img of product start-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-3 mb-5 bg-white rounded d-flex ">
+                    <div>
+                        <img src="/mobile.png" alt="" class="col-md-11 mt-4">
+                    </div>
+                    <div class="col-md-5 mt-5" style="padding-top: 10vh;">
+                        <h2> Looking for the Best Service Provider? Get the App!</h2>
+                        <span class="d-flex mt-4">
+                            <i class="bi bi-chevron-right"></i>
+                            <p>HOM-APP-TITFind nearby listings</p>
+                        </span>
+
+                        <span class="d-flex">
+                            <i class="bi bi-chevron-right"></i>
+                            <p>Easy service enquiry</p>
+                        </span>
+
+
+                        <span class="d-flex">
+                            <i class="bi bi-chevron-right"></i>
+                            <p>Listing reviews and ratings</p>
+                        </span>
+
+                        <span class="d-flex">
+                            <i class="bi bi-chevron-right"></i>
+                            <p>Manage your listing, enquiry and reviews</p>
+                        </span>
+
+                        <p class="mt-3">We'll send you a link, to you below provided email id & open it on your smart
+                            phone to download the app</p>
+
+
+                        <div class="d-flex mt-4">
+                            <img src="/gstore.png" alt="" style="width: 150px;">
+                            <img src="/astore.png" alt="" style="width: 150px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Img of product end-->
     </main>
+
+    <!--temp start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-2 text-center">
+                <div class="bg-white rounded">
+                    <h2 class="pt-3">List your business for FREE</h2>
+                    <p class="text-secondary pt-2">There are many variations of passages of Lorem Ipsum available, but
+                        the majority have <br> suffered alteration in some form, by injected humour.</p>
+                    <button class="btn btn-danger mt-3 mb-3">ADD MY BUSINESS <i class="bi bi-arrow-right-short"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--temp end-->
+
+
+    <!--Footer start-->
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-white text-center mt-5">
+                <h2 style="background-color: #090B52;">Free support: +01 5426 24400   |   Email: rn53themes@gmail.com</h2>
+            </div>
+
+            <div class="col-12 d-flex" style="background-color: #090B52;">
+                 <div class="col-4 text-white footer-opt">
+                    <h5 style="padding-left:26px ;">TOP CATEGORY</h5>
+                    <ul>
+                        <li>Technology</li>
+                        <li>Spa and Facial</li>
+                        <li>Real Estate</li>
+                        <li>Sports</li>
+                        <li>Education</li>
+                        <li>Electricals</li>
+                        <li>Automobiles</li>
+                        <li>Transpotation</li>
+                    </ul>
+                 </div>
+
+
+                 <div class="col-4 text-white footer-opt" >
+                    <h5 style="padding-left:26px ;">TRENDING CATEGORY</h5>
+                    <ul>
+                        <li>Hospitals</li>
+                        <li>Restaurants</li>
+                        <li>Automobiles</li>
+                        <li>Restaurants</li>
+                        <li>Real Estate</li>
+                        <li>Sports</li>
+                        <li>Education</li>
+                        <li>Electricals</li>
+                    </ul>
+                 </div>
+
+
+                 <div class="col-4 text-white footer-opt">
+                    <h5 style="padding-left:26px ;">HELP & SUPPORT</h5>
+                    <ul>
+                        <li>About us</li>
+                        <li>FAQ</li>
+                        <li>Feedback</li>
+                        <li>Contact us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of use</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container" style="background-color: #090B52;">
+        <div class="row">
+            <div class="col-md-12 text-white footer-opt2" >
+                <h5 style="padding-left:26px ; padding-top: 25px;">Popular Tags</h5>
+                <ul>
+                    <li>Schools in NewYork</li>
+                    <li>Real estate in illunois</li>
+                    <li>Real estate in Chennail</li>
+                    <li>Enents in Tailand</li>
+                    <li>Flat for rent in melborn</li>
+                    <li>Schools in NewYork</li>
+                    <li>Real estate in illunois</li>
+                    <li>Real estate in Chennail</li>
+                    <li>Enents in Tailand</li>
+                    <li>Flat for rent in melborn</li>
+                    <li>Schools in NewYork</li>
+                    <li>Real estate in illunois</li>
+                    <li>Real estate in Chennail</li>
+                    <li>Enents in Tailand</li>
+                    <li>Flat for rent in melborn</li>
+                    <li>Schools in NewYork</li>
+                    <li>Real estate in illunois</li>
+                    <li>Real estate in Chennail</li>
+                    <li>Enents in Tailand</li>
+                    <li>Flat for rent in melborn</li>
+                    <li>Schools in NewYork</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container" style="background-color: #090B52;">
+        <div class="row text-white footer-opt3">
+            <div class="col-4">
+                <h5>GET IN TOUCH</h5>
+                <p>Address: 28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</p>
+                <p>Phone: +01 5426 24400</p>
+                <p>Email: rn53themes@gmail.com</p>
+            </div>
+
+            <div class="col-4">
+                <h5>DOWNLOAD OUR FREE MOBILE APPS</h5>
+                <img src="/gstore.png" alt="" style="width: 150px;">
+                <img src="/astore.png" alt="" style="width: 150px;">
+            </div>
+
+            <div class="col-4">
+                <h5>SOCIAL MEDIA</h5>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-google"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+        </div>
+      </div>
+
+      <div class="container" style="background-color: #090B52;">
+        <div class="row text-white text-center footer-opt4">
+            <div class="col-md-12">
+                <ul>
+                    <li>Australia</li>
+                    <li>UK</li>
+                    <li>USA</li>
+                    <li>Germany</li>
+                    <li>China</li>
+                    <li>France</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    <!--Footer end-->
+
+
+    <!--Final footer start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 bg-info  mt-5" style="display: flex; align-items: center; justify-content: center; height: 35px;">
+                <p class="h6">Copyright &copy; 2022 Rn53 Themes. Proudly powered by Rn53Themes.net</p>
+            </div>
+        </div>
+    </div>
+    <!--Final footer end-->
+
+
+    <!--Project Completed-->
 
     <!--Boostrap js cdn-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
